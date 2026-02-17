@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Urology Nomogram Cheat Sheet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color-scheme: light;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f7f7fb;
+      color: #222;
+    }
+    header {
+      background: #123b6d;
+      color: #fff;
+      padding: 1.5rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.7rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+    main {
+      max-width: 1100px;
+      margin: 1.5rem auto 2rem;
+      padding: 0 1rem;
+    }
+    nav {
+      background: #ffffff;
+      border-radius: 0.75rem;
+      padding: 0.75rem 1rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+      font-size: 0.9rem;
+    }
+    nav strong {
+      display: block;
+      margin-bottom: 0.35rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #123b6d;
+      margin-right: 0.8rem;
+      margin-bottom: 0.25rem;
+      display: inline-block;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      margin-bottom: 1.75rem;
+    }
+    section > h2 {
+      border-left: 4px solid #123b6d;
+      padding-left: 0.5rem;
+      margin-bottom: 0.75rem;
+      font-size: 1.3rem;
+    }
+    h3 {
+      margin: 1rem 0 0.35rem;
+      font-size: 1.05rem;
+    }
+    .calc-card {
+      background: #ffffff;
+      border-radius: 0.75rem;
+      padding: 0.7rem 0.9rem;
+      margin-bottom: 0.6rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    }
+    .calc-title {
+      font-weight: 600;
+      margin-bottom: 0.15rem;
+    }
+    .calc-meta {
+      font-size: 0.9rem;
+      margin-bottom: 0.25rem;
+      color: #555;
+    }
+    .calc-link a {
+      font-size: 0.9rem;
+      color: #0b63c5;
+      text-decoration: none;
+      word-break: break-all;
+    }
+    .calc-link a:hover {
+      text-decoration: underline;
+    }
+    .subheading {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-top: 0.8rem;
+      margin-bottom: 0.3rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: #555;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #666;
+      padding: 1rem 0 2rem;
+    }
+    @media (min-width: 768px) {
+      .calc-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Urology Nomogram Cheat Sheet</h1>
+    <p>Quick clinical reference for commonly used web-based urologic prediction tools.</p>
+  </header>
+
+  <main>
+    <nav>
+      <strong>Jump to disease area:</strong>
+      <a href="#prostate">Prostate</a>
+      <a href="#bladder">Bladder</a>
+      <a href="#utuc">Upper Tract (UTUC)</a>
+      <a href="#renal">Renal / RCC</a>
+      <a href="#testis">Testicular GCT</a>
+      <a href="#penile">Penile</a>
+      <a href="#stones">Stone Disease</a>
+      <a href="#bph">BPH / LUTS &amp; Functional</a>
+    </nav>
+
+    <!-- PROSTATE -->
+    <section id="prostate">
+      <h2>Prostate Cancer</h2>
+
+      <div class="subheading">Screening / Biopsy Decision</div>
+      <div class="calc-grid">
+        <div class="calc-card">
+          <div class="calc-title">PCPT Risk Calculator (v2)</div>
+          <div class="calc-meta"><strong>Use:</strong> Estimate risk of any PCa and high-grade PCa pre-biopsy.</div>
+          <div class="calc-meta"><strong>Inputs:</strong> Age, PSA, DRE, race, family history, prior biopsy.</div>
+          <div class="calc-link">
+            <a href="https://www.riskcalc.org/PCPTRC/" target="_blank">https://www.riskcalc.org/PCPTRC/</a>
+          </div>
+        </div>
+
+        <div class="calc-card">
+          <div class="calc-title">ERSPC / SWOP Prostate Cancer Risk Calculators</div>
+          <div class="calc-meta"><strong>Use:</strong> MRI-era risk of any PCa and clinically significant PCa; multiple modules (PSA-only, DRE, TRUS, MRI-based).</div>
+          <div class="calc-link">
+            <a href="https://www.prostatecancer-riskcalculator.com/" target="_blank">https://www.prostatecancer-riskcalculator.com/</a>
+          </div>
+        </div>
+
+        <div class="calc-card">
+          <div class="calc-title">MSKCC Pre-Biopsy Nomogram</div>
+          <div class="calc-meta"><strong>Use:</strong> Probability of PCa and high-grade PCa on systematic biopsy.</div>
+          <div class="calc-link">
+            <a href="https://www.mskcc.org/nomograms/prostate/biopsy_risk_dynamic" target="_blank">https://www.mskcc.org/nomograms/prostate/biopsy_risk_dynamic</a>
+          </div>
+        </div>
+
+        <div class="calc-card">
+          <div class="calc-title">Stanford SPCC (MRI-based)</div>
+          <div class="calc-meta"><strong>Use:</strong> Pre-biopsy probability of clinically significant PCa incorporating PI-RADS, PSA density, age, biopsy status.</div>
+          <div class="calc-link">
+            <a href="https://med.stanford.edu/ucil/nomogram.html" target="_blank">https://med.stanford.edu/ucil/nomogram.html</a>
+          </div>
+        </div>
+
+        <div class="calc-card">
+          <div class="calc-title">UCLA PCRC-MRI Risk Calculator</div>
+          <div class="calc-meta"><strong>Use:</strong> Risk of clinically significant PCa at MRI-guided biopsy (fusion or cognitive), combining clinical variables and MRI findings.</div>
+          <div class="calc-link">
+            <a href="https://www.uclahealth.org/departments/urology/iuo/research/prostate-cancer/risk-calculator-mri-guided-biopsy-pcrc-mri" target="_blank">
+              https://www.uclahealth.org/departments/urology/iuo/research/prostate-cancer/risk-calculator-mri-guided-biopsy-pcrc-mri
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="subheading">Localized Disease (Surgery / RT)</div>
+      <div class="calc-grid">
+        <div class="calc-card">
+          <div class="calc-title">MSKCC Post-RP Recurrence Nomogram</div>
+          <div class="calc-meta"><strong>Use:</strong> Time-dependent risk of biochemical recurrence after radical prostatectomy.</div>
+          <div class="calc-meta"><strong>Inputs:</strong> Pathologic stage, grade, margins, PSA, etc.</div>
+          <div class="calc-link">
+            <a href="https://www.mskcc.org/nomograms/prostate/pre_op" target="_blank">https://www.mskcc.org/nomograms/prostate/pre_op</a>
+          </div>
+        </div>
+
+        <div class="calc-card">
+          <div class="calc-title">MSKCC EBRT / Brachytherapy Nomograms</div>
+          <div class="calc-meta"><strong>Use:</strong> Freedom from progression after external beam RT or brachytherapy.</div>
+          <div class="calc-link">
+            <a href="https://www.mskcc.org/nomograms/prostate" target="_blank">https://www.mskcc.org/nomograms/prostate</a>
+          </div>
+        </div>
+
+        <div class="calc-card">
+          <div class="calc-title">Fox Chase Prostate Nomograms</div>
+          <div class="calc-meta"><strong>Use:</strong> CAPRA &amp; CAPRA-S, nodal invasion risk, BCR after RP, salvage RT outcomes, potency and continence recovery.</div>
+          <div class="calc-link">
+            <a href="https://www.cancernomograms.com/nomograms/" target="_blank">https://www.cancernomograms.com/nomograms/</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="subheading">Active Surveillance</div>
+      <div class="calc-grid">
+        <div class="calc-card">
+          <div class="calc-title">Fox Chase MRI-Based AS Tools</div>
+          <div class="calc-meta"><strong>Use:</strong> Risk of AS disqualification on repeat biopsy; risk of adverse pathology in AS candidates, integrating mpMRI and clinical data.</div>
+          <div class="calc-link">
+            <a href="https://www.cancernomograms.com/nomograms/" target="_blank">https://www.cancernomograms.com/nomograms/</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="subheading">Advanced Disease / PSMA</div>
+      <div class="calc-grid">
+        <div class="calc-card">
+          <div class="calc-title">UCLA PSMA PET Upstaging Risk Calculator</div>
+          <div class="calc-meta"><strong>Use:</strong> Predict probability that PSMA PET will upstage apparently localized prostate cancer to node-positive or metastatic disease.</div>
+          <div class="calc-link">
+            <a href="https://www.uclahealth.org/departments/urology/iuo/research/prostate-cancer/psma-pet-upstaging-risk-calculator" target="_blank">
+              https://www.uclahealth.org/departments/urology/iuo/research/prostate-cancer/psma-pet-upstaging-risk-calculator
+            </a>
+          </div>
+        </div>
+
+        <div class="calc-card">
+          <div class="calc-title">UCLA LuPSMA Response Prediction Tool</div>
+          <div class="calc-meta"><strong>Use:</strong> Predict PSA response and overall survival with ¹⁷⁷Lu-PSMA-617 therapy.</div>
+          <div class="calc-link">
+            <a href="https://www.uclahealth.org/departments/urology/iuo/research/prostate-cancer/lupsma-response-prediction-tool" target="_blank">
+              https://www.uclahealth.org/departments/urology/iuo/research/prostate-cancer/lupsma-response-prediction-tool
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLADDER -->
+    <section id="bladder">
+      <h2>Bladder Cancer</h2>
+
+      <div class="subheading">NMIBC</div>
+      <div class="calc-grid">
+        <div class="calc-card">
+          <div class="calc-title">EORTC NMIBC Risk Calculator</div>
+          <div class="calc-meta"><strong>Use:</strong> Recurrence and progression risk estimates using classic EORTC tables.</div>
+          <div class="calc-link">
+            <a href="https://www.eortc.be/tools/bladdercalculator/" target="_blank">https://www.eortc.be/tools/bladdercalculator/</a>
+          </div>
+        </div>
+
+        <div class="calc-card">
+          <div class="calc-title">CUETO BCG-Treated NMIBC Nomogram</div>
+          <div class="calc-meta"><strong>Use:</strong> Recurrence and progression risk in BCG-treated NMIBC patients.</div>
+          <div class="calc-link">
+            <a href="https://www.aeu.es/Cueto.html" target="_blank">https://www.aeu.es/Cueto.html</a>
+          </div>
+        </div>
+
+        <div class="calc-card">
+          <div class="calc-title">EAU NMIBC Risk (NMIBC.net)</div>
+          <div class="calc-meta"><strong>Use:</strong> Updated European risk groups and progression estimates.</div>
+          <div class="calc-link">
+            <a href="https://www.nmibc.net/" target="_blank">https://www.nmibc.net/</a>
+          </div>
+        </div>
+
+        <div class="calc-card">
+          <div class="calc-title">PROGRxN-BCa</div>
+          <div class="calc-meta"><strong>Use:</strong> Quantifies risk of progression in non–muscle-invasive bladder cancer (NMIBC) using contemporary clinicopathologic variables; supports treatment and surveillance discussions.</div>
+          <div class="calc-link">
+            <a href="https://progrxn.ca/Use_PROGRxN-BCa" target="_blank">https://progrxn.ca/Use_PROGRxN-BCa</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="subheading">Muscle-Invasive / Cystectomy</div>
+      <div class="calc-grid">
+        <div class="calc-card">
+          <div class="calc-title">MSKCC Post-Cystectomy Nomogram</div>
+          <div class="calc-meta"><strong>Use:</strong> 5-year recurrence and cancer-specific survival after radical cystectomy.</div>
+          <div class="calc-link">
+            <a href="https://www.mskcc.org/nomograms/bladder/post_op" target="_blank">https://www.mskcc.org/nomograms/bladder/post_op</a>
+          </div>
+        </div>
+
+        <div class="calc-card">
+          <div class="calc-title">Fox Chase Bladder Nomograms</div>
+          <div class="calc-meta"><strong>Use:</strong> Advanced disease probability at RC, post-RC recurrence and mortality, NAC+RC outcomes, peri-op mortality, competing-risk models.</div>
+          <div class="calc-link">
+            <a href="https://www.cancernomograms.com/nomograms/" target="_blank">https://www.cancernomograms.com/nomograms/</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UTUC -->
+    <section id="utuc">
+      <h2>Upper Tract Urothelial Carcinoma (UTUC)</h2>
+
+      <div class="calc-grid">
+        <div class="calc-card">
+          <div class="calc-title">Fox Chase UTUC Nomograms</div>
+          <div class="calc-meta"><strong>Use:</strong> Pre-operative prediction of non-organ–confined UTUC; post-RNU cancer-specific survival.</div>
+          <div class="calc-link">
+            <a href="https://www.cancernomograms.com/nomograms/" target="_blank">https://www.cancernomograms.com/nomograms/</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RENAL -->
+    <section id="renal">
+      <h2>Renal / RCC</h2>
+
+      <div class="subheading">Post-Nephrectomy Prognosis</div>
+      <div class="calc-grid">
+        <div class="calc-card">
+          <div class="calc-title">MSKCC RCC Recurrence Nomogram</div>
+          <div class="calc-meta"><strong>Use:</strong> Risk of recurrence after nephrectomy for RCC.</div>
+          <div class="calc-link">
+            <a href="https://www.mskcc.org/nomograms/renal/post_op" target="_blank">https://www.mskcc.org/nomograms/renal/post_op</a>
+          </div>
+        </div>
+
+        <div class="calc-card">
+          <div class="calc-title">Fox Chase RCC Suite</div>
+          <div class="calc-meta"><strong>Use:</strong> Leibovich, UISS, Karakiewicz, D-SSIGN, ASSURE and competing-risk survival models for RCC.</div>
+          <div class="calc-link">
+            <a href="https://www.cancernomograms.com/nomograms/" target="_blank">https://www.cancernomograms.com/nomograms/</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="subheading">Localized / Small Renal Mass</div>
+      <div class="calc-grid">
+        <div class="calc-card">
+          <div class="calc-title">Small Renal Mass Risk Calculator (Fred Hutch)</div>
+          <div class="calc-meta"><strong>Use:</strong> Treatment-specific mortality and complication risk for PN, RN, ablation, and active surveillance.</div>
+          <div class="calc-link">
+            <a href="https://small-renal-mass-risk-calculator.fredhutch.org/" target="_blank">https://small-renal-mass-risk-calculator.fredhutch.org/</a>
+          </div>
+        </div>
+
+        <div class="calc-card">
+          <div class="calc-title">Kidney Upstaging Calculator (RiskCalc)</div>
+          <div class="calc-meta"><strong>Use:</strong> Risk of pT3 upstaging for cT1 localized renal masses.</div>
+          <div class="calc-link">
+            <a href="https://www.riskcalc.org/KidneyUpstaging/" target="_blank">https://www.riskcalc.org/KidneyUpstaging/</a>
+          </div>
+        </div>
+
+        <div class="calc-card">
+          <div class="calc-title">RENAL Nephrometry Score (MDCalc / Fox Chase)</div>
+          <div class="calc-meta"><strong>Use:</strong> Tumour complexity, malignancy and high-grade risk, and post-PN complication risk.</div>
+          <div class="calc-link">
+            <a href="https://www.mdcalc.com/calc/3908/renal-nephrometry-score" target="_blank">https://www.mdcalc.com/calc/3908/renal-nephrometry-score</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="subheading">Sarcomatoid RCC</div>
+      <div class="calc-grid">
+        <div class="calc-card">
+          <div class="calc-title">Sarcomatoid RCC CSS Nomogram</div>
+          <div class="calc-meta"><strong>Use:</strong> 3- and 5-year cancer-specific survival in sarcomatoid RCC (SEER-based).</div>
+          <div class="calc-link">
+            <a href="https://yangtong.shinyapps.io/specific/" target="_blank">https://yangtong.shinyapps.io/specific/</a>
+          </div>
+        </div>
+
+        <div class="calc-card">
+          <div class="calc-title">Sarcomatoid RCC OS Nomogram</div>
+          <div class="calc-meta"><strong>Use:</strong> 3- and 5-year overall survival in sarcomatoid RCC.</div>
+          <div class="calc-link">
+            <a href="https://yangtong.shinyapps.io/overall/" target="_blank">https://yangtong.shinyapps.io/overall/</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIS -->
+    <section id="testis">
+      <h2>Testicular Germ-Cell Tumours</h2>
+
+      <div class="calc-grid">
+        <div class="calc-card">
+          <div class="calc-title">MSKCC Testis Cancer Nomogram</div>
+          <div class="calc-meta"><strong>Use:</strong> Survival after cisplatin-based chemotherapy for metastatic non-seminomatous GCT.</div>
+          <div class="calc-link">
+            <a href="https://www.mskcc.org/nomograms/testis" target="_blank">https://www.mskcc.org/nomograms/testis</a>
+          </div>
+        </div>
+
+        <div class="calc-card">
+          <div class="calc-title">Fox Chase Testis Nomograms</div>
+          <div class="calc-meta"><strong>Use:</strong> Cancer-specific and overall survival, probability of complete response to platinum chemotherapy, nodal risk.</div>
+          <div class="calc-link">
+            <a href="https://www.cancernomograms.com/nomograms/" target="_blank">https://www.cancernomograms.com/nomograms/</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PENILE -->
+    <section id="penile">
+      <h2>Penile Cancer</h2>
+
+      <div class="calc-grid">
+        <div class="calc-card">
+          <div class="calc-title">Fox Chase Penile Cancer Nomograms</div>
+          <div class="calc-meta"><strong>Use:</strong> Nodal metastasis probability in cN0 disease; OS/CSS after ILND ± systemic therapy.</div>
+          <div class="calc-link">
+            <a href="https://www.cancernomograms.com/nomograms/" target="_blank">https://www.cancernomograms.com/nomograms/</a>
+          </div>
+        </div>
+
+        <div class="calc-card">
+          <div class="calc-title">RiskCalc Penile Cancer Tools</div>
+          <div class="calc-meta"><strong>Use:</strong> 5-year cancer-specific survival and nodal risk in penile SCC.</div>
+          <div class="calc-link">
+            <a href="https://www.riskcalc.org/PenileCancer5YearSurvivalandLymphNodeInvolvement/" target="_blank">https://www.riskcalc.org/PenileCancer5YearSurvivalandLymphNodeInvolvement/</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STONES -->
+    <section id="stones">
+      <h2>Stone Disease</h2>
+
+      <div class="calc-grid">
+        <div class="calc-card">
+          <div class="calc-title">STONE Score (MDCalc)</div>
+          <div class="calc-meta"><strong>Use:</strong> Probability of ureteral stone on non-contrast CT in ED flank-pain presentations.</div>
+          <div class="calc-link">
+            <a href="https://www.mdcalc.com/calc/1564/stone-score-urolithiasis" target="_blank">https://www.mdcalc.com/calc/1564/stone-score-urolithiasis</a>
+          </div>
+        </div>
+
+        <div class="calc-card">
+          <div class="calc-title">MIMIC Stone Passage Nomogram (BURS)</div>
+          <div class="calc-meta"><strong>Use:</strong> Probability of spontaneous passage based on stone size, location and patient factors.</div>
+          <div class="calc-link">
+            <a href="https://bursturologycollaborative.github.io/#calculator" target="_blank">
+              https://bursturologycollaborative.github.io/#calculator
+            </a>
+          </div>
+        </div>
+
+        <div class="calc-card">
+          <div class="calc-title">ROKS Stone Recurrence Nomogram (QxMD)</div>
+          <div class="calc-meta"><strong>Use:</strong> 5- and 10-year risk of future symptomatic stone episodes after an index stone.</div>
+          <div class="calc-link">
+            <a href="https://qxmd.com/calculate/calculator_438/roks-recurrence-of-kidney-stone-2018" target="_blank">
+              https://qxmd.com/calculate/calculator_438/roks-recurrence-of-kidney-stone-2018
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BPH / LUTS -->
+    <section id="bph">
+      <h2>BPH / LUTS &amp; Functional Urology</h2>
+
+      <div class="calc-grid">
+        <div class="calc-card">
+          <div class="calc-title">BPH Progression / AUR Risk (RiskCalc)</div>
+          <div class="calc-meta"><strong>Use:</strong> Risk of acute urinary retention and need for BPH surgery; effect of 5-ARI therapy.</div>
+          <div class="calc-link">
+            <a href="https://www.riskcalc.org/BenignProstaticHyperplasia/" target="_blank">https://www.riskcalc.org/BenignProstaticHyperplasia/</a>
+          </div>
+        </div>
+
+        <div class="calc-card">
+          <div class="calc-title">Prostatic Inflammation Calculator (PICS)</div>
+          <div class="calc-meta"><strong>Use:</strong> Probability of significant histologic prostatic inflammation in men with LUTS/BPH.</div>
+          <div class="calc-link">
+            <a href="https://www.prostatic-inflammation-calculator.com/" target="_blank">https://www.prostatic-inflammation-calculator.com/</a>
+          </div>
+        </div>
+
+        <div class="calc-card">
+          <div class="calc-title">Potency &amp; Continence Recovery (Fox Chase)</div>
+          <div class="calc-meta"><strong>Use:</strong> Pre- and post-RARP recovery probabilities for erectile function and urinary continence.</div>
+          <div class="calc-link">
+            <a href="https://www.cancernomograms.com/nomograms/" target="_blank">https://www.cancernomograms.com/nomograms/</a>
+          </div>
+        </div>
+
+        <div class="calc-card">
+          <div class="calc-title">Uroflow Nomograms (Uroflowmetry)</div>
+          <div class="calc-meta"><strong>Use:</strong> Age- and volume-adjusted normal vs abnormal Qmax based on standard uroflow nomograms.</div>
+          <div class="calc-link">
+            <a href="https://www.medicalalgorithms.com/uroflowmetry-nomogram" target="_blank">
+              https://www.medicalalgorithms.com/uroflowmetry-nomogram
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Built as a condensed reference for commonly used web-based urologic nomograms.
+    </footer>
+  </main>
+</body>
+</html>
